@@ -1,11 +1,17 @@
-function sumValues(num1, num2, add) {
-    if (add) {
-        const result = 0;
-        result = num1 + num2;
-        console.log('values added: ', result);
-    } else return;
+function test(prices, discount) {
+       var discounted = [];
+       var finalPrice = 0;
 
-    console.log('final result: ', result);
+       for (var i = 0; i < prices.length; i++) {
+               var discountedPrice = prices[i] * (1 - discount);
+               finalPrice = Math.round(discountedPrice * 100) / 100;
+               discounted.push(finalPrice);
+       }
+
+       // console.log(i);
+       // console.log(discountedPrice);
+       console.log(finalPrice);
+       return discounted;
 }
 
-sumValues(10, 10, true);
+test([100, 200, 300], 0.5);
