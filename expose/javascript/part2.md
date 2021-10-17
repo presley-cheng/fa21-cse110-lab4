@@ -47,4 +47,13 @@ Print the number 3, because the variable was only assigned once, which is at the
 '==' indicates loose equality, meaning the two values will be evaluated in terms their numerical values, whereas '===' indicates strict equality, where it compares two values in their original data type and values, without any type conversions.
 ## Question 16
 answer in part2-question16.js
- 
+## Question 17
+[2,4,6], the callback function is passed into the function, for each iteration of the for loop, the callback function is called, which returns a number. The returned value will then be passed over to the push function to store into the array.
+## Question 18
+answer in part2-question18.js
+## Question 19
+1
+4
+3
+2
+

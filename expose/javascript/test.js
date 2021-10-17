@@ -1,14 +1,8 @@
-let statistics = {
-    redCars: 21,
-    blueCars: 45,
-    greenCars: 12,
-    raceCars: 5,
-    blackCars: 40,
-    rareCars: 2
+function printNums() {
+    console.log(1);
+    setTimeout(() => console.log(2), 1000);
+    setTimeout(() => console.log(3), 0);
+    console.log(4);
 }
 
-for (let field in statistics) {
-        if (field.startsWith('r') || statistics[field] % 2 != 0) {
-               console.log(statistics[field]);
-        }
-}
+printNums();
